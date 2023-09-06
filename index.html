@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" >
+    <title>Guess My Number!</title>
+    
+  </head>
+  <body>
+    <header class="gradient-background ">
+      <h1 class="gradient-backgroundt">Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button  class="btn again gradient-backgroundt">Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main class="gradient-backgroundt">
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check Here!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+      <button type="button" class="btn btn-primary" id="liveToastBtn">Show Rules</button>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="guessimg.png" class="rounded me-2" alt="gIMG">
+            <strong class="me-auto">Game Rules</strong>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class=" gradient-background">
+          <div class="toast-body">
+          You start with a score of 20.
+          For each incorrect guess, your score will be reduced by 1.
+          </div>
+          <div class=" gradient-background">
+            <div class="toast-body">
+              Type your guess in the input field and click the "Check Here!" button to see if you're correct.Try to guess the correct number with the fewest attempts to achieve a higher score.
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+
